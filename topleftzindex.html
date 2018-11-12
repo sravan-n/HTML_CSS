@@ -4,6 +4,11 @@
 			#container {
 				background-color: beige; height: 500px; max-width: 500px; 
 				position: relative; z-index: -4; /*z-index only works with positioned elements */
+				margin: 0 auto; /*center of the page */
+			}
+			#box{
+				height: 235px; width: 235px; position: absolute;  
+				transform: translate(50%, 45%);  
 			}
 			#box1, #box2, #box3 {
 				height: 100px; width: 100px; border: 1px solid black; position: absolute; 
@@ -21,10 +26,11 @@
 	</head>
     <body>
 		<div id="container">
-			<div id="box1"></div>
-			<div id="box2"></div>
-			<div id="box3"></div>
+			<div id="box">
+				<div id="box1"></div>
+				<div id="box2"></div>
+				<div id="box3"></div>
+			</div>
 		</div>
-    	
     </body>
 </html>
